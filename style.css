@@ -1,0 +1,103 @@
+@font-face {
+    font-family: nb;
+    src: url(./fonts/NBInternationalProBoo.woff2);
+}
+
+@font-face {
+    font-family: inspired;
+    src: url(./fonts/Rejouice-Headline.woff2);
+}
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nb;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+}
+
+#cursor{
+    background-color: tomato;
+    height: 7.5vw;
+    width: 7.5vw;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+#cursor h5{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+
+}
+
+#page1-content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* background-color: black; */
+    z-index: 10;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    /* height: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vw 2vw;
+}
+
+nav h3{
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+nav h4{
+    font-size: 1.5vw;
+    font-weight: 100;
+
+}
+
+#page1-content h1{
+    font-family: inspired;
+    font-size: 29vw;
+    font-weight: 100;
+    line-height: 27vw;
+}
+
+#page1-content h1 span{
+    font-family: inspired;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+}
