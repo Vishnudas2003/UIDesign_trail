@@ -22,15 +22,14 @@ html, body {
 #page1{
     height: 100vh;
     width: 100%;
-    background-color: #dadada;
     position: relative;
 }
 
 #cursor{
     background-color: tomato;
-    height: 7.5vw;
-    width: 7.5vw;
-    border-radius: 50%;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 100%;
     position: fixed;
     z-index: 9;
     display: flex;
@@ -40,8 +39,7 @@ html, body {
 }
 
 #cursor h5{
-    font-size: 1.2vw;
-    font-weight: 500;
+    font-weight: 200;
 }
 
 #page1 video{
@@ -99,5 +97,59 @@ nav h4{
 #page2{
     height: 100vh;
     width: 100%;
-    background-color: #dadada;
 }
+
+.page-section {
+    color: #0E0E0E; /* Dark text color */
+    padding: 80px 40px;
+    text-align: center;
+    font-family: inspired; /* Use a modern, clean font */
+}
+
+/* Flex container for headings */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+/* Styling for the headings */
+.heading {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0;
+    font-weight: 500; /* Slightly bold for emphasis */
+}
+
+.left-heading {
+    text-align: left;
+}
+
+.right-heading {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Styling for the paragraph content */
+.content {
+    font-size: 30px;
+    line-height: 1.6;
+    margin: 40px auto; /* Center the content */
+    text-align: center;
+    font-weight: 300; /* Light font weight for a clean look */
+}
+
+/* Styling for the animated line */
+.animated-line {
+    margin: 20px auto; /* Center the line */
+    width: 90%; /* Adjust width to suit your design */
+    height: 1px; /* Set line thickness */
+    transform: scaleX(0); /* Start hidden for animation */
+}
+
